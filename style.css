@@ -1,0 +1,560 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "GilroyMedium";
+  /* outline: 2px solid red; */
+}
+.main {
+  background-image: url(./img/Галактика_azari-architects_5\ 1.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 32px calc(10.8vw + 23.5px);
+}
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+  margin-bottom: calc(13.8vw + 8.5px);
+}
+nav {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.weekend {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  align-items: center;
+  font-size: 24px;
+}
+h3 {
+  font-family: "Playfair Display";
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 162%;
+  color: #c0ad95;
+}
+.description {
+  font-size: 14px;
+  line-height: 116%;
+  color: white;
+  cursor: pointer;
+}
+h1 {
+  font-family: "Cormorant";
+  font-size: calc(0.1vw + 38.6px);
+  font-weight: 100;
+  color: white;
+  margin-bottom: calc(1.9vw + 16.1px);
+}
+.infor p {
+  color: white;
+  font-size: calc(1.2vw + 15px);
+  line-height: 85%;
+  margin-bottom: calc(0.3vw + 15.9px);
+}
+.dataTime {
+  display: flex;
+  gap: 12px;
+}
+.sell {
+  font-family: GilroyMedium;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  color: white;
+  font-family: Gilroy;
+  font-size: calc(0.7vw + 15.27px);
+  line-height: 107%;
+  margin-bottom: calc(0.2vw + 11.6px);
+}
+
+.data {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: calc(0.7vw + 19.2px);
+}
+.time {
+  width: calc(1.3vw + 25.2px);
+  height: calc(1.3vw + 25.2px);
+  background-color: white;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.dataSell {
+  display: flex;
+  justify-self: center;
+  gap: calc(0.3vw + 8.9px);
+  font-size: calc(0.7vw + 16.6px);
+  line-height: 107%;
+}
+.data span {
+  font-size: calc(0.6vw + 12.9px);
+  line-height: 186%;
+  color: white;
+}
+.telephone {
+  background: #fbfbfb;
+  border-radius: 8px;
+  width: calc(26.8vw + 124px);
+  margin-bottom: calc(0.5vw + 21.2px);
+  font-size: calc(0.7vw + 16.6px);
+  line-height: 92%;
+  display: block;
+  outline: none;
+  padding: 12px 20px;
+}
+button {
+  width: calc(4.7vw + 191.6px);
+  height: 56px;
+  top: 664px;
+  left: 128px;
+  border: none;
+  border-radius: 8px;
+  background: #af9678;
+  color: white;
+  font-size: calc(0.7vw + 16.6px);
+  line-height: 107%;
+  text-align: center;
+  margin-bottom: 95px;
+}
+.contener {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 88px;
+}
+@media (max-width: 700px) {
+  .contener {
+    gap: 1px;
+  }
+}
+.third {
+  padding-left: calc(10.4vw + 17.1px);
+  padding-right: calc(10.4vw + 17.1px);
+}
+.line_1 {
+  width: 100%;
+}
+.right {
+  width: calc(33.7vw + 205.6px);
+  height: calc(5.2vw + 256.9px);
+}
+.right h2 {
+  font-family: Cormorant;
+  font-size: calc(2.7vw + 29.1px);
+  font-weight: 100;
+  line-height: 104%;
+  color: #11100e;
+  margin-bottom: calc(1.3vw + 44.7px);
+}
+.right p {
+  font-size: calc(0.9vw + 16.5px);
+  line-height: 123%;
+  color: #11100e;
+  margin-bottom: calc(0.4vw + 28.6px);
+}
+.right button {
+  width: 263.41px;
+  height: 56px;
+  top: 1551px;
+  left: 580px;
+}
+.arrow_down {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+.arrow {
+  width: 76px;
+  height: 76px;
+  position: relative;
+  left: 1380px;
+  right: 56px;
+  bottom: 0;
+}
+
+.choice {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+}
+.icons {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 83px;
+}
+.icons img {
+  width: 100px;
+  height: 100px;
+}
+
+.installments {
+  font-size: calc(0.9vw + 17.1px);
+  line-height: 93%;
+  text-align: center;
+  font-weight: normal;
+  margin-bottom: calc(4vw + 87.1px);
+}
+.line_1 {
+  margin-bottom: calc(3.7vw + 111.7px);
+}
+.aboutUs h2 {
+  font-family: Cormorant;
+  font-size: calc(2.6vw + 30.7px);
+  line-height: 41%;
+  color: #937a60;
+  text-align: center;
+  margin-bottom: calc(0.2vw + 42.5px);
+}
+.max {
+  font-size: 30px;
+  line-height: 170%;
+  margin-bottom: 146px;
+}
+.mini {
+  display: none;
+}
+.disappear {
+  font-size: 19px;
+  line-height: 147%;
+  color: #937a60;
+  display: none;
+}
+.why {
+  color: #937a60;
+  margin-bottom: calc(3.4wv + 30.1px);
+  font-size: calc(2.6vw + 30.7px);
+}
+.icons {
+  text-align: center;
+}
+
+.fourth {
+  padding-left: calc(7.9vw + 9.1px);
+  padding-right: calc(7.4vw + 2.7px);
+}
+.catalog {
+  margin-bottom: calc(5.3vw + 21.1px);
+  color: #937a60;
+  font-size: calc(2.6vw + 30px);
+  line-height: 41%;
+}
+.furniture {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas:
+    "coup "
+    "closet"
+    "kitchen";
+  gap: calc(2.7vw + 21.4px);
+}
+.madeshkaf {
+  display: none;
+}
+.container {
+  width: calc(19.6vw + 49.1px);
+  height: calc(30.7vw + 165.6px);
+}
+.kupeAppear,
+.doorAppear,
+.kuhnaAppear {
+  display: none;
+}
+
+.kitchen {
+  width: calc(19.6vw + 49.1px);
+  height: calc(30.7vw + 165.6px);
+}
+.kule {
+  width: calc(19.6vw + 49.1px);
+  height: calc(30.7vw + 165.6px);
+}
+
+.coup {
+  grid-area: slidingWardrobe;
+}
+.closet {
+  grid-area: closetDoor;
+}
+.kitchen {
+  grid-area: kitchen;
+}
+.fifth {
+  padding-left: calc(3.9vw + 13.7px);
+  margin-bottom: calc(4vw + 91.1px);
+}
+.materials {
+  color: #937a60;
+  font-size: calc(2.6vw + 30px);
+}
+.components {
+  display: flex;
+  justify-content: space-around;
+}
+.detail button {
+  border: none;
+  background-color: #fbfbfb;
+  color: #11100e;
+}
+.slide {
+  width: 100%;
+  height: 100%;
+}
+
+.sixth {
+  padding-left: calc(8.6vw + 11.4px);
+  padding-right: calc(10.4vw + 17.1px);
+  padding-bottom: calc(0.4vw + 98.8px);
+}
+.sixth h1 {
+  color: #937a60;
+}
+.Special {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: calc(4.3vw + 16.2px);
+  margin-bottom: calc(0.5vw + 37.2px);
+}
+.bestseller {
+  color: #ffffff;
+  background-color: #11100e;
+}
+.rubl{
+font-size: 13px;
+line-height: 215%;
+color:  #937A60;
+}
+.rubl :nth-child(3){
+  color: #E52B2B;
+}
+.comfort{
+  font-size: calc(1.3vw + 11.8px);
+line-height: 93%;
+}
+.seller{
+  font-size: calc(1.1vw + 13.4px);
+  line-height: 28px;
+  color: #E52B2B;
+  
+}
+.price {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas:
+    "tag tag"
+    "Riviera bag";
+}
+.tag{
+  grid-area: rubl;
+}
+.Riviera{
+  grid-area: comfort;
+}
+.bag{
+  grid-area: seller;
+}
+.more {
+  color: #937a60;
+  font-size: calc(0.9vw + 17.1px);
+  line-height: 93%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+}
+.cabinets img {
+  width: calc(19.8vw + 54.5px);
+  height: calc(20.6vw + 134.9px);
+}
+.more img {
+  width: 100%;
+}
+.seventh {
+  background: #161513;
+  padding-top: calc(6.9vw + 35px);
+  background-image: url(./img/telephone.png), url(./img/ten.png);
+  background-repeat: no-repeat;
+  background-size: 30vw;
+  background-position: right 90px top 74px, right 120px bottom 65px;
+  margin-bottom: calc(4.1vw + 88.3px);
+}
+
+.stock {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.stock h1 {
+  font-size: calc(2.6vw + 30.7px);
+  line-height: 41%;
+  margin-bottom: calc(0.4vw + 23.5px);
+}
+.stock span {
+  color: #ffffff;
+  font-size: calc(0.9vw + 17.1px);
+  line-height: 140%;
+  margin-bottom: calc(1.6vw + 19.8px);
+}
+.stock input {
+  width: calc(38.4vw + 205.1px);
+  margin-bottom: calc(2.1vw + 61.5px);
+  border-radius: 12px;
+  padding-top: calc(0.4vw + 12.8px);
+  padding-bottom: calc(0.4vw + 12.8px);
+  padding-left: calc(0.8vw + 20.4px);
+  font-size: calc(0.9vw + 17.1px);
+  line-height: 93%;
+}
+.stock button {
+  background: #af9678;
+  padding-top: calc(0.2vw +11.4px);
+  padding-left: calc(0.2vw + 61.4px);
+  padding-right: calc(0.2vw + 61.4px);
+  padding-bottom: calc(0.2vw +11.4px);
+  text-align: center;
+  font-size: calc(0.5vw + 18.2px);
+  line-height: 107%;
+  width: calc(3.4vw + 237.1px);
+}
+
+.eighth {
+  padding-left: calc(4vw + 3.9px);
+  padding-right: calc(14.7vw + 32.4px);
+  padding-bottom: calc(4.2vw + 88px);
+}
+.reviews {
+  font-size: calc(2.6vw + 30.3px);
+  line-height: 41%;
+  color: #937a60;
+  margin-bottom: calc(3.4vw + 29.7px);
+}
+.comments h5 {
+  font-size: calc(1.7vw + 17.5px);
+  line-height: 75%;
+  margin-bottom: calc(3.2vw + 13.5px);
+}
+.comments p {
+  font-size: calc(1vw + 15.7px);
+  line-height: 133%;
+  margin: 0 179;
+}
+.adaptation {
+  display: none;
+}
+
+@media (max-width: 700px) {
+  .madeshkaf {
+    display: block;
+
+    margin-bottom: 102px;
+  }
+  .allPictures {
+    width: 280px;
+    height: 441px;
+  }
+  .furniture {
+    display: none;
+  }
+  .slidingWardrobe,
+  .closetDoor,
+  .kitchen {
+    display: none;
+  }
+  .kupeAppear,
+  .doorAppear,
+  .kuhnaAppear {
+    display: block;
+  }
+  .mini {
+    display: block;
+    font-size: 20px;
+    line-height: 170%;
+    margin-left: 15.9px;
+    margin-right: 15.9px;
+    text-align: center;
+  }
+  .max {
+    display: none;
+  }
+  .bestseller:nth-child(3),
+  .bestseller:nth-child(6) {
+    display: none;
+  }
+  .Special {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+}
+@media (max-width: 700px) {
+  .choice {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  .disappear {
+    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 37px;
+    margin-bottom: 100px;
+  }
+  .Line2 {
+    width: 100%;
+  }
+  .fifth {
+    padding-right: 16px;
+  }
+  .smartphone {
+    display: none;
+  }
+  .seventh {
+    background-image: none;
+  }
+}
+@media (max-width: 975px) {
+  .description {
+    display: none;
+  }
+  .weekend {
+    display: block;
+  }
+  .closet {
+    display: none;
+  }
+  .arrow {
+    display: none;
+  }
+  .right {
+    margin: 132px 13px 130px 17px;
+  }
+  .withoutAdaptation {
+    display: none;
+  }
+  .adaptation {
+    display: block;
+  }
+}
+@media (min-width: 1000px) {
+  .why {
+    text-align: center;
+  }
+  .comments p {
+    margin: 0 16;
+  }
+}
