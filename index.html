@@ -46,9 +46,9 @@
             <span>Сек</span>
           </div>
         </div>
-        <input class="telephone" type="tel" placeholder="Введите номер" />
-        <button>Получить скидку</button>
       </div>
+      <input class="telephone" type="tel" placeholder="Введите номер" />
+        <button>Получить скидку</button>
     </section>
     <section>
       <div class="contener">
@@ -125,22 +125,23 @@
       <h1 class="catalog">Каталог</h1>
       <div class="furniture">
         <div class="container">
-          <img src="./img/1 2024-08-29_22-06-35.png" alt="kupe" class="slidingWardrobe">
-         
+          <img src="./img/фон.png" alt="Background">
+          <div class="textOne">Шкаф-купе</div> <!-- Текст внутри контейнера -->
+        </div>
+        <div class="kupe">
+          <img src="./img/фон.png" alt="Background">  
+          <div class="textTwo">Шкаф с распашными дверями</div>  
         </div>
         <div class="kuhna">
-          <img src="./img/2 2024-08-29_22-07-10.png" alt="door" class="closetDoor"/>
-         
+          <img src="./img/фон.png" alt="Background"> 
+          <div class="textThree">Кухни</div>  
         </div>
-        <div class="kule">
-          <img src="./img/3 2024-08-29_22-07-36.png" alt="kuhna" class="kitchen"/>
-         
-        </div>
-      </div>
+      </div>      
       <div class="madeshkaf">
         <img src="./img/all.png" alt="allPictures" class="allPictures">
       </div>
     </section>
+    
     <section class="fifth">
       <h1 class="materials">Современные материалы</h1>
       <div class="components">
@@ -191,17 +192,17 @@
       <h1>Специальные предложения</h1>
       <div class="Special">
         <div class="bestseller">
-          <span>Хит продаж</span>
+          <span class="blackRectangle">Хит продаж</span>
           <div class="cabinets">
             <img src="./img/№1.png" alt="closet" />
-            <div class="prices">
-              <span>Шкаф Riviera/1</span>
-              <span>1000p</span>
-            </div>
           </div>
+            <div class="prices">
+              <span class="comfort">Шкаф Riviera/1</span>
+              <span class="seller">1000p</span>
+            </div>
         </div>
         <div class="bestseller">
-          <h2>-50%</h2>
+            <span class="blackBox">-50%</span>
           <div class="cabinets">
             <img src="./img/№2.png" alt="closet" />
             <div class="price">
@@ -212,7 +213,7 @@
           </div>
         </div>
         <div class="bestseller">
-          <h2>-30%</h2>
+            <span class="blackBox">-30%</span>
           <div class="cabinets">
             <img src="./img/№3.png" alt="closet" />
             <div class="price">
@@ -223,7 +224,7 @@
           </div>
         </div>
         <div class="bestseller">
-          <h2>Рассрочка</h2>
+            <span class="blackRectangle">Рассрочка</span>      
           <div class="cabinets">
             <img src="./img/№4.png" alt="closet" />
             <div class="price">
@@ -234,7 +235,7 @@
           </div>
         </div>
         <div class="bestseller">
-          <h2>-40%</h2>
+            <span class="blackBox">-40%</span>    
           <div class="cabinets">
             <img src="./img/№5.png" alt="closet" />
             <div class="price">
@@ -245,7 +246,7 @@
           </div>
         </div>
         <div class="bestseller">
-          <h2>-15%</h2>
+            <span class="blackBox">-15%</span>
           <div class="cabinets">
             <img src="./img/№6.png" alt="closet" />
             <div class="price">
@@ -297,9 +298,18 @@
       </div>
     </section>
     <section class="ninth">
-      <img src="./img/Производство.png" alt="production" class="withoutAdaptation"> 
-      <img src="./img/Production.png" alt="production_2" class="adaptation">
-    </section>
+      <h1>Производство</h1>
+      <div class="side">
+        <img src="./img/часть 1.png" alt="production" class="rightSide"> 
+        <img src="./img/часть 2.png" alt="production_2" class="lefStide">
+        <img src="./img/часть 3.png" alt="matte" class="matte"> 
+        <ol class="list">
+          <li class="benefit">Минимальный опыт работы наших монтажников — 10 лет</li>
+          <li class="benefit">Любые размеры, цвет, дизайн и фурнитура</li>
+          <li class="benefit">Установка в удобные для Вас день и время</li>
+          <li class="benefit">Сроки изготовления 5-15 дней</li>
+        </ol>            
+    </section>   
     <script src="./main.js"></script>
     <script src="./splide-4.1.3/dist/js/splide.min.js"></script>
     <script>
