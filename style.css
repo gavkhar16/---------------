@@ -5,7 +5,6 @@
   margin: 0;
   box-sizing: border-box;
   font-family: "GilroyMedium";
- 
 }
 .main {
   background-image: url(./img/Галактика_azari-architects_5\ 1.png);
@@ -27,6 +26,7 @@ nav {
   align-items: center;
   gap: 20px;
 }
+
 .weekend {
   display: flex;
   flex-direction: column;
@@ -49,10 +49,10 @@ h3 {
 }
 h1 {
   font-family: "Cormorant";
-  font-size: calc(0.1vw + 38.6px);
+  font-size: calc(2.8vw + 30.1px);
   font-weight: 100;
   color: white;
-  margin-bottom: calc(1.9vw + 16.1px);
+  margin-bottom: calc(1.8vw + 17.2px);
 }
 .infor p {
   color: white;
@@ -178,6 +178,7 @@ button {
   height: 45px;
   top: 1551px;
   left: 580px;
+  cursor: pointer;
 }
 .arrow_down {
   display: flex;
@@ -243,6 +244,7 @@ button {
   display: none;
 }
 .why {
+  font-family: "Cormorant";
   color: #937a60;
   margin-bottom: calc(3.4wv + 30.1px);
   font-size: calc(2.6vw + 30.7px);
@@ -256,6 +258,7 @@ button {
   padding-right: calc(7.4vw + 2.7px);
 }
 .catalog {
+  font-family: "Cormorant";
   margin-bottom: calc(5.3vw + 21.1px);
   color: #937a60;
   font-size: calc(2.6vw + 30px);
@@ -267,15 +270,29 @@ button {
   gap: calc(2.7vw + 21.4px);
 }
 .container {
-  position: relative; 
-  width: 360px;
-  height: 664px;
-  background-image: url('./img/first.png');
-  background-repeat: no-repeat;
-  background-size: cover;
+  position: relative;
+  width: 332px;
+  height: 608px;
+}
+.container {
+  position: relative;
+  display: inline-block;
+}
+.container ::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #937a60bf;
+  pointer-events: none;
+}
+.container {
+  display: block;
 }
 
-.textOne {
+/* .textOne {
   position: absolute; 
   top: 50%; 
   left: 50%; 
@@ -285,16 +302,30 @@ button {
   line-height: 73%;
   text-align: center; 
   z-index: 1;
+} */
+
+.kupe{
+  width: 332px;
+  height: 608px;
+ }
+
+.kupe {
+  position: relative;
+  display: inline-block;
+}
+.kupe ::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 608px;
+  background-color: #937a60bf;
+  pointer-events: none;
 }
 .kupe {
-  position: relative; 
-  width: 360px;
-  height: 664px;
-  background-image: url('./img/second.png');
-  background-repeat: no-repeat;
-  background-size: cover;
+  display: block;
 }
-
 .textTwo {
   position: absolute; 
   top: 50%; 
@@ -306,16 +337,29 @@ button {
   z-index: 1; 
   text-align: center; 
   width: 305px;
+} 
+.kuhna {
+  width: 332px;
+  height: 608px;
 }
-.kuhna{
-  position: relative; 
-  width: 360px;
-  height: 664px;
-  background-image: url('./img/second.png');
-  background-repeat: no-repeat;
-  background-size: cover;
+.kuhna {
+  position: relative;
+  display: inline-block;
 }
-.textThree{
+.kuhna ::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width:332px;
+  height: 608px;
+  background-color: #937a60bf;
+  pointer-events: none;
+}
+.kuhna {
+  display: block;
+}
+/* .textThree{
   position: absolute; 
   top: 50%; 
   left: 50%; 
@@ -324,23 +368,21 @@ button {
   font-size: 33px; 
   line-height: 73%;
   z-index: 1; 
-  
-}
-.madeshkaf {
-  
+} */
+ 
+
+
+.madeshkaf{
   display: none;
 }
-.kupeAppear,
-.doorAppear,
-.kuhnaAppear {
-  display: none;
-}
+
 
 .fifth {
   padding-left: calc(3.9vw + 13.7px);
   margin-bottom: calc(4vw + 91.1px);
 }
 .materials {
+  font-family: "Cormorant";
   color: #937a60;
   font-size: calc(2.6vw + 30.2px);
 }
@@ -358,14 +400,32 @@ button {
   width: 100%;
   height: 100%;
 }
+.slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.slide img {
+  max-width: 100%;
+  height: auto;
+}
+
+.slide span {
+  margin-top: 10px; 
+  font-size:calc(0.9vw + 16.1px);
+  color: #333; 
+}
 
 .sixth {
   padding-left: calc(8.6vw + 11.4px);
   padding-right: calc(10.4vw + 17.1px);
   padding-bottom: calc(0.4vw + 98.8px);
 }
-.sixth h1 {
+.sixth h2 {
+  font-family: "Cormorant";
   color: #937a60;
+  font-size: calc(2.6vw + 30.7px);
 }
 .Special {
   display: grid;
@@ -406,7 +466,7 @@ button {
   line-height: 93%;
   color: #000000;
 }
-.more span{
+.more span {
   cursor: pointer;
 }
 
@@ -421,15 +481,15 @@ button {
   justify-content: end;
   align-items: end;
 }
-.rubl{
+.rubl {
   font-size: 13px;
 }
-.seller{
+.seller {
   font-style: calc(1.1vw + 12.5px);
 }
-.comfort{
+.comfort {
   justify-content: left;
-  align-items:baseline;
+  align-items: baseline;
 }
 .more {
   color: #937a60;
@@ -463,10 +523,12 @@ button {
   justify-content: center;
   align-items: center;
 }
-.stock h1 {
+.stock h2 {
+  font-family: "Cormorant";
   font-size: calc(2.6vw + 30.7px);
   line-height: 41%;
   margin-bottom: calc(0.4vw + 23.5px);
+  color: #ffffff;
 }
 .stock span {
   color: #ffffff;
@@ -494,14 +556,17 @@ button {
   font-size: calc(0.5vw + 18.2px);
   line-height: 107%;
   width: calc(3.4vw + 237.1px);
+  cursor: pointer;
 }
 
 .eighth {
+  font-family: "Cormorant";
   padding-left: calc(4vw + 3.9px);
   padding-right: calc(14.7vw + 32.4px);
   padding-bottom: calc(4.2vw + 88px);
 }
 .reviews {
+  font-family: "Cormorant";
   font-size: calc(2.6vw + 30.3px);
   line-height: 41%;
   color: #937a60;
@@ -517,48 +582,50 @@ button {
   line-height: 133%;
   margin: 0 179;
 }
-.ninth{
+.ninth {
   width: calc(99.3vw + 10.2px);
   height: calc(61.8vw + 550.2px);
 }
-.ninth h1{
+.ninth h2 {
+  font-family: "Cormorant";
   font-size: calc(2.6vw + 30.3px);
   line-height: 41%;
   color: #937a60;
   margin-left: calc(10vw + 12px);
-}
-.side{
-  display: flex;
- gap: calc(1.3vw + 0.71px);
-}
-.rightSide{
-  width: calc(37.5vw + 4px);
-  height: calc(12.3vw + 426.5px);
-}
-.lefStide{
-width: calc(60.4vw + 5.5px);
-height: calc(12.3vw + 426.5px);
+  margin-bottom: calc(2.9vw + 73.5px);
 }
 .side {
   display: flex;
   gap: calc(1.3vw + 0.71px);
-  position: relative; 
+}
+.rightSide {
+  width: calc(37.5vw + 4px);
+  height: calc(12.3vw + 426.5px);
+}
+.lefStide {
+  width: calc(60.4vw + 5.5px);
+  height: calc(12.3vw + 426.5px);
+}
+.side {
+  display: flex;
+  gap: calc(1.3vw + 0.71px);
+  position: relative;
 }
 
 .matte {
   position: absolute;
-  top: 50%;  
-  left: 50%; 
-  transform: translate(-50%, -50%); 
-  width: calc(30vw + 20px); 
-  height: auto; 
-  z-index: 10; 
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: calc(30vw + 20px);
+  height: auto;
+  z-index: 10;
 }
-.matte{
+.matte {
   width: calc(58.9vw + 99.4px);
   height: calc(3.5vw + 390.1px);
 }
-.list{
+.list {
   display: flex;
   flex-direction: column;
   gap: calc(0.6vw + 26px);
@@ -568,17 +635,17 @@ height: calc(12.3vw + 426.5px);
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  z-index: 20; 
-  list-style-type: none; 
-  text-align: center; 
-  color: white; 
-  font-size: calc(1.2vw + 14px); 
+  z-index: 20;
+  list-style-type: none;
+  text-align: center;
+  color: white;
+  font-size: calc(1.2vw + 14px);
 }
 .list {
-  list-style-type: decimal; 
+  list-style-type: decimal;
 }
 .benefit:nth-child(1) {
-  width: 80%; 
+  width: 80%;
   margin: 0 auto;
 }
 
@@ -588,21 +655,26 @@ height: calc(12.3vw + 426.5px);
 }
 
 .benefit:nth-child(3) {
-  width: 60%; 
+  width: 60%;
   margin: 0 auto;
 }
 
 .benefit:nth-child(4) {
-  width: 50%; 
+  width: 50%;
   margin: 0 auto;
 }
-.list{
-  width:calc(52.3vw + 52.5px) ;
+.list {
+  width: calc(52.3vw + 52.5px);
 }
 @media (max-width: 700px) {
+  .addition{
+    position: relative;
+    display: block;
+    height: 28px;
+    width: 215px;
+  }
   .madeshkaf {
     display: block;
-
     margin-bottom: 102px;
   }
   .allPictures {
@@ -613,18 +685,9 @@ height: calc(12.3vw + 426.5px);
     width: 80px;
     height: 80px;
   }
+
   .furniture {
     display: none;
-  }
-  .slidingWardrobe,
-  .closetDoor,
-  .kitchen {
-    display: none;
-  }
-  .kupeAppear,
-  .doorAppear,
-  .kuhnaAppear {
-    display: block;
   }
   .mini {
     display: block;
