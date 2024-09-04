@@ -588,10 +588,10 @@ button {
   margin: 0 179;
 }
 
-.ninth {
+/* .ninth {
   width: calc(99.3vw + 10.2px);
   height: calc(61.8vw + 550.2px);
-}
+} */
 .ninth h2 {
   font-family: "Cormorant";
   font-size: calc(2.6vw + 30.3px);
