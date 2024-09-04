@@ -5,9 +5,10 @@
   margin: 0;
   box-sizing: border-box;
   font-family: "GilroyMedium";
+  font-display: swap;
 }
 .main {
-  background-image: url(./img/Галактика_azari-architects_5\ 1.png);
+  background-image: url(./img/Галактика_azari-architects_51.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -397,18 +398,15 @@ button {
   color: #11100e;
 }
 .slide {
-  width: 100%;
-  height: 100%;
+  width:calc(23.3vw + 173.4px);
+  height: calc(16.6vw + 269.8px);
+ 
 }
 .slide {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-.slide img {
-  max-width: 100%;
-  height: auto;
+  gap: 34px;
 }
 
 .slide span {
@@ -416,6 +414,7 @@ button {
   font-size:calc(0.9vw + 16.1px);
   color: #333; 
 }
+
 
 .sixth {
   padding-left: calc(8.6vw + 11.4px);
@@ -491,22 +490,28 @@ button {
   justify-content: left;
   align-items: baseline;
 }
+
 .more {
   color: #937a60;
   font-size: calc(0.9vw + 17.1px);
   line-height: 93%;
   display: flex;
   flex-direction: column;
+  align-items: center; 
   justify-content: center;
-  align-self: center;
+  text-align: center;
 }
+.more img {
+  height: 1px;
+  width: calc(9.6vw + 137.1px);
+  margin-top: 10px; 
+}
+
 .cabinets img {
   width: calc(17.9vw + 52.8px);
   height: calc(20.4vw + 137.5px);
 }
-.more img {
-  width: 100%;
-}
+
 .seventh {
   background: #161513;
   padding-top: calc(6.9vw + 35px);
