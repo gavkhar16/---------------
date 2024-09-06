@@ -812,6 +812,20 @@ button {
   }
 }
 @media (max-width: 400px) {
+  .open {
+    display: block;
+  }
+  .open {
+    display: flex;
+    flex-direction: column;
+  }
+  .open span {
+    position: relative;
+    left: 190px;
+    bottom: 56px;
+    right: 16px;
+    color: #ffffff;
+  }
   .choice {
     width: 250px;
     grid-template-columns: repeat(2, 1fr);
