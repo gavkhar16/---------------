@@ -29,6 +29,7 @@
   </head>
   <body>
     <section class="main">
+      <div></div>
       <header>
         <h3>MADESHKAF</h3>
         <nav>
@@ -40,9 +41,9 @@
             <a class="weekend">
                 <span class="description">+375259199290</span>
                 <span class="description">Пн-Вс 9:00-21:00</span>
-                    <span></span>
             </a>
         </nav>
+        <img src="./img/menu.png" alt="burgerMenu" class="first_menu">
     </header>
     
       <div class="infor">
@@ -69,7 +70,7 @@
         </div>
       </div>
       <input class="telephone" type="tel" placeholder="Введите номер" >
-        <button>Получить скидку</button>
+      <button>Получить скидку</button>
     </section>
     <section>
       <div class="contener">
@@ -147,32 +148,29 @@
       <h2 class="catalog">Каталог</h2>
       <div class="furniture">
         <div class="container">
-          <img src="./img/Wardrobe.png" alt="Wardrobe" loading="lazy">
-          <div class="textOne">Шкаф-купе</div>
+          <span class="textOne">Шкаф-купе</span>
         </div>
-        <div class="kupe">
-          <img src="./img/Wardrobewithhingeddoors.png" alt="Wardrobe" loading="lazy">  
-          <div class="textTwo">Шкаф с распашными дверями</div>  
+        <div class="kupe"> 
+          <span class="textTwo">Шкаф с распашными дверями</span>  
         </div>
 
-        <div class="kuhna">
-          <img src="./img/Kitchenfurniture.png" alt="Kitchen furniture" loading="lazy"> 
-          <div class="textThree">Кухни</div>  
+        <div class="kuhna"> 
+          <span class="textThree">Кухни</span>  
         </div>
       </div>      
-      <div class="madeshkaf">
-        <img src="./img/all.png" alt="allPictures" class="allPictures" loading="lazy">
-      </div>
+      
     </section>
     
     <section class="fifth">
       <h2 class="materials">Современные материалы</h2>
       <div class="components">
         <div class="detail">
-          <button>Материалы</button>
+          <button class="production" id="materialButton" >Материалы</button>
+          <!-- <img src="./img/Line5.png" alt="Line5"> -->
         </div>
         <div class="detail">
-          <button>Фурнитура</button>
+          <button class="production" id="furnitureButton" >Фурнитура</button>
+          <!-- <img src="./img/Line5.png" alt="Line5"> -->
         </div>
       </div>
       <div
@@ -186,38 +184,38 @@
             <li class="splide__slide">
               <div class="slide">
                 <img src="./img/ldsp(1).jpg" alt="ldsp (1)" loading="lazy">
-                <span>Лдсп </span>
               </div>
+              <span class="typesMaterial">Лдсп </span>
             </li>
             <li class="splide__slide">
               <div class="slide">
-                <img src="./img/glass.jpg" alt="glass (1)" loading="lazy">
-                <span>Стекло </span>
+                <img src="./img/glass.jpg" alt="glass (1)" loading="lazy">               
               </div>
+              <span class="typesMaterial" >Стекло </span>
             </li>
             <li class="splide__slide">
               <div class="slide">
-                <img src="./img/ldsp(3).png" alt="glass_3" loading="lazy">
-                <span> Лдсп</span>
+                <img src="./img/ldsp(3).jpg" alt="glass_3" loading="lazy">               
               </div>
+              <span class="typesMaterial"> Лдсп</span>
             </li>
             <li class="splide__slide">
               <div class="slide">
-                <img src="./img/ldsp(1).jpg" alt="ldsp (1)" loading="lazy">
-                <span>Лдсп </span>
+                <img src="./img/ldsp(1).jpg" alt="ldsp (1)" loading="lazy">                
               </div>
+              <span class="typesMaterial">Лдсп </span>
             </li>
           </ul>
         </div>
       </div>
-      <div class="splide__arrows">
+      <!-- <div class="splide__arrows">
         <button class="splide__arrow splide__arrow--prev">
           <img src="./img/chevron_big_left.png" alt="arrow">
         </button>
         <button class="splide__arrow splide__arrow--next">
           <img src="./img/left.png" alt="Next">
         </button>
-      </div>
+      </div> -->
     </section>
     <section class="sixth">
       <h2>Специальные предложения</h2>
@@ -297,12 +295,25 @@
       <div class="stock">
         <h2>Акции</h2>
         <span>Узнай первым об акциях и скидках</span>
-        <input type="text" placeholder="введите номер телефона или email" >
-        <button>Подписаться</button>
+        <input type="text" class="box" placeholder="введите номер телефона или email" >
+        <button class="subscribe">Подписаться</button>
       </div>
     </section>
+    <section class="additional">
+      <div class="bg_white">
+        <div class="gratit">
+          <span>Спасибо что выбираете нас!</span>
+        </div>
+        <div class="gratit">
+          <span>Ваша подписка принята</span>
+        </div>
+        <button class="close">Закрыть</button>
+      </div>
+    </section>
+    <section class="black"></section>
     <section class="eighth">
-      <h2 class="reviews">Отзывы</h2>
+      <div class="space">
+        <h2 class="reviews">Отзывы</h2>
       <div class="splide" id="feedback">
         <div class="splide__track">
           <ul class="splide__list">
@@ -327,14 +338,16 @@
           </ul>
         </div>
       </div>
-      <div class="splide__arrows_2">
+      </div>
+      
+      <!-- <div class="splide__arrows_2">
         <button class="splide__arrow splide__arrow--prev">
           <img src="./img/chevron_big_left.png" alt="Prev">
         </button>
         <button class="splide__arrow splide__arrow--next">
           <img src="./img/left.png" alt="Next">
         </button>
-      </div>
+      </div> -->
     </section>
     <section class="ninth">
       <h2>Производство</h2>
@@ -359,13 +372,12 @@
           rewind: true,
           speed: 2000,
           gap: 34,
-          autoplay: {
-            delay: 4000,
-          },
-          breakpoint: {
+          autoplay: true, 
+          interval: 4000, 
+          breakpoints: {
             700: {
               perPage: 1,
-              gap: 11,
+              gap: 20,
             },
           },
           arrows: true,
@@ -373,6 +385,7 @@
         splide.mount();
       });
     </script>
+    
    <script>
     document.addEventListener("DOMContentLoaded", function () {
       var splide = new Splide("#feedback", {
@@ -380,6 +393,7 @@
         gap: 30,
         rewind: true,
         arrows: true,
+        pagination: true,
         breakpoints: {
           975: {
             perPage: 1,

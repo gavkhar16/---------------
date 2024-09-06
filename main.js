@@ -19,3 +19,46 @@ function saleDate(){
     setInterval(()=>{   
     saleDate()    
     },1000)
+
+let openWindow = document.querySelector('.first_menu');
+openWindow.addEventListener('click', openFirstWindow);
+
+function openFirstWindow(){
+    console.log('Я работаю');
+}
+const materialButton = document.getElementById('materialButton');
+const furnitureButton = document.getElementById('furnitureButton');
+
+function toggleBorder(clickedButton, otherButton) {
+ 
+  clickedButton.classList.add('active-border');
+  otherButton.classList.remove('active-border');
+}
+
+materialButton.addEventListener('click', function() {
+  toggleBorder(materialButton, furnitureButton);
+});
+
+furnitureButton.addEventListener('click', function() {
+  toggleBorder(furnitureButton, materialButton);
+});
+
+
+
+const subscribeButton = document.querySelector('.subscribe');
+const closeButton = document.querySelector('.close');
+const seventhSection = document.querySelector('.seventh');
+const additionalSection = document.querySelector('.additional');
+const blackSection = document.querySelector('.black');
+
+
+subscribeButton.addEventListener('click', () => {
+  seventhSection.style.display = 'none'; 
+  additionalSection.style.display = 'flex'; 
+});
+
+
+closeButton.addEventListener('click', () => {
+  additionalSection.style.display = 'none'; 
+  blackSection.style.display = 'block'; 
+});

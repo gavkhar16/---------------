@@ -6,6 +6,7 @@
   box-sizing: border-box;
   font-family: "GilroyMedium";
   font-display: swap;
+  /* outline: 2pt solid red; */
 }
 .main {
   background-image: url(./img/Галактика_azari-architects_51.jpg);
@@ -15,12 +16,29 @@
   padding: 32px calc(10.8vw + 23.5px);
 }
 header {
+  padding-top: 32px;
   width: 100%;
   display: flex;
   justify-content: space-around;
   align-items: center;
+  gap: 20px;
   color: white;
   margin-bottom: calc(13.8vw + 8.5px);
+}
+.first_menu {
+  display: none;
+}
+@media (max-width: 900px) {
+  header {
+    justify-content: space-between;
+    flex-direction: row-reverse;
+  }
+  nav {
+    display: none;
+  }
+  .first_menu {
+    display: block;
+  }
 }
 nav {
   display: flex;
@@ -53,20 +71,29 @@ h1 {
   font-size: calc(2.8vw + 30.1px);
   font-weight: 100;
   color: white;
-  margin-bottom: calc(1.8vw + 17.2px);
+}
+.infor {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+@media (max-width: 700px) {
+  .infor {
+    background-color: #3535353d;
+    backdrop-filter: blur(10px);
+  }
 }
 .infor p {
   color: white;
   font-size: calc(1.2vw + 15px);
   line-height: 85%;
-  margin-bottom: calc(0.3vw + 15.9px);
 }
 .dataTime {
   display: flex;
   gap: 12px;
 }
 .sell {
-  font-family: GilroyMedium;
+  font-family: "ilroyMedium", sans-serif;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -119,15 +146,14 @@ h1 {
   outline: none;
   padding: 12px 20px;
   cursor: pointer;
+  color: #07070763;
 }
 button {
   width: calc(4.7vw + 191.6px);
   height: 50px;
-  top: 664px;
-  left: 128px;
   border: none;
   border-radius: 8px;
-  background: #af9678;
+  background-color: #af9678;
   color: white;
   font-size: calc(0.7vw + 16.6px);
   line-height: 107%;
@@ -245,10 +271,10 @@ button {
   display: none;
 }
 .why {
+  margin-top: 50px;
   font-family: "Cormorant";
   color: #937a60;
-  margin-bottom: calc(3.4wv + 30.1px);
-  font-size: calc(2.6vw + 30.7px);
+  margin-bottom: calc(3.4vw + 30.1px);
 }
 .icons {
   text-align: center;
@@ -257,6 +283,7 @@ button {
 .fourth {
   padding-left: calc(7.9vw + 9.1px);
   padding-right: calc(7.4vw + 2.7px);
+  margin-bottom: calc(4.2vw + 88.5px);
 }
 .catalog {
   font-family: "Cormorant";
@@ -268,17 +295,23 @@ button {
 .furniture {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: calc(2.7vw + 21.4px);
+  gap: calc(2.2vw + 22.8px);
 }
 .container {
+  border-top: 1px solid black;
   position: relative;
   width: 332px;
   height: 608px;
+  background-image: url(./img/Wardrobe.png);
+  background-repeat: no-repeat;
+  background-size: contain;
 }
-.container {
-  position: relative;
-  display: inline-block;
-}
+/* .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+} */
 .container ::before {
   content: "";
   position: absolute;
@@ -288,27 +321,31 @@ button {
   height: 100%;
   background-color: #937a60bf;
   pointer-events: none;
+  width: calc(18vw + 70.2px);
+  height: calc(32.4vw + 141.2px);
 }
 .container {
-  display: block;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: calc(18vw + 70.2px);
+  height: calc(32.4vw + 141.2px);
 }
 
-/* .textOne {
-  position: absolute; 
-  top: 50%; 
-  left: 50%; 
-  transform: translate(-50%, -50%); 
-  color: white; 
-  font-size: 33px; 
+.textOne {
+  color: #ffffff;
+  font-size: calc(0.9vw + 20.1px);
   line-height: 73%;
-  text-align: center; 
+  text-align: center;
   z-index: 1;
-} */
+}
 
-.kupe{
-  width: 332px;
-  height: 608px;
- }
+.kupe {
+  background-image: url(./img/Wardrobewithhingeddoors.png);
+  width: calc(6.3vw + 260px);
+  height: calc(41.5vw + 2.8px);
+}
 
 .kupe {
   position: relative;
@@ -323,25 +360,28 @@ button {
   height: 608px;
   background-color: #937a60bf;
   pointer-events: none;
+  width: calc(6.3vw + 260px);
+  height: calc(41.5vw + 2.8px);
 }
 .kupe {
-  display: block;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
-/* .textTwo {
-  position: absolute; 
-  top: 50%; 
-  left: 50%; 
-  transform: translate(-50%, -50%); 
-  color: white; 
-  font-size: 33px; 
+.textTwo {
+  color: #ffffff;
+  font-size: calc(0.9vw + 20.1px);
   line-height: 73%;
-  z-index: 1; 
-  text-align: center; 
-  width: 305px;
-}  */
+  text-align: center;
+  z-index: 1;
+}
 .kuhna {
-  width: 332px;
-  height: 608px;
+  background-image: url(./img/Kitchenfurniture.png);
+  width: calc(18vw + 70.2px);
+  height: calc(32.4vw + 141.2px);
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 .kuhna {
   position: relative;
@@ -352,37 +392,32 @@ button {
   position: absolute;
   top: 0;
   left: 0;
-  width:332px;
+  width: 332px;
   height: 608px;
   background-color: #937a60bf;
   pointer-events: none;
+  width: calc(18vw + 70.2px);
+  height: calc(32.4vw + 141.2px);
 }
 .kuhna {
-  display: block;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
-/* .textThree{
-  position: absolute; 
-  top: 50%; 
-  left: 50%; 
-  transform: translate(-50%, -50%); 
-  color: white; 
-  font-size: 33px; 
+.textThree {
+  color: white;
+  font-size: calc(0.9vw + 20.1px);
   line-height: 73%;
-  z-index: 1; 
-} */
- 
-
-
-.madeshkaf{
-  display: none;
+  z-index: 1;
 }
-
 
 .fifth {
   padding-left: calc(3.9vw + 13.7px);
   margin-bottom: calc(4vw + 91.1px);
 }
 .materials {
+  margin-bottom: 40px;
   font-family: "Cormorant";
   color: #937a60;
   font-size: calc(2.6vw + 30.2px);
@@ -391,30 +426,45 @@ button {
   display: flex;
   justify-content: space-around;
 }
-.detail button {
+.production {
   width: calc(7.1vw + 117px);
-  border: none;
   background-color: #fbfbfb;
   color: #11100e;
+
 }
+.production {
+  width: calc(7.1vw + 117px);
+  background-color: #fbfbfb;
+  color: #11100e;
+  border: 2px solid transparent; 
+  border-radius: 0;
+}
+
+.active-border {
+  border-top: 2px;
+  border-left: 2px;
+  border-right: 2px;
+  border-color: #000000; 
+}
+
+
 .slide {
-  width:calc(23.3vw + 173.4px);
   height: calc(16.6vw + 269.8px);
- 
 }
+
 .slide {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  gap: 34px;
 }
-
-.slide span {
-  margin-top: 10px; 
-  font-size:calc(0.9vw + 16.1px);
-  color: #333; 
+.splide__slide {
+  text-align: center;
 }
-
+.typesMaterial {
+  display: block;
+  margin-top: calc(0.8vw + 16.4px);
+  font-size: calc(0.9vw + 17.1px);
+  text-align: center;
+}
 
 .sixth {
   padding-left: calc(8.6vw + 11.4px);
@@ -427,6 +477,7 @@ button {
   font-size: calc(2.6vw + 30.7px);
 }
 .Special {
+  margin-top: 30px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
@@ -497,23 +548,23 @@ button {
   line-height: 93%;
   display: flex;
   flex-direction: column;
-  align-items: center; 
+  align-items: center;
   justify-content: center;
   text-align: center;
 }
 .more img {
   height: 1px;
   width: calc(9.6vw + 137.1px);
-  margin-top: 10px; 
+  margin-top: 10px;
 }
 
 .cabinets img {
-  width: calc(17.9vw + 52.8px);
+  width: 100%;
   height: calc(20.4vw + 137.5px);
 }
 
 .seventh {
-  background: #161513;
+  background-color: #161513;
   padding-top: calc(6.9vw + 35px);
   background-image: url(./img/telephone.png), url(./img/ten.png);
   background-repeat: no-repeat;
@@ -541,8 +592,8 @@ button {
   line-height: 140%;
   margin-bottom: calc(1.6vw + 19.8px);
 }
-.stock input {
-  width: calc(38.4vw + 205.1px);
+.box {
+  width: calc(35vw + 205.1px);
   margin-bottom: calc(2.1vw + 61.5px);
   border-radius: 12px;
   padding-top: calc(0.4vw + 12.8px);
@@ -563,11 +614,55 @@ button {
   width: calc(3.4vw + 237.1px);
   cursor: pointer;
 }
-
+.additional{
+  background-color: #161513;
+  padding-top: calc(6.9vw + 35px);
+  background-image: url(./img/telephone.png), url(./img/ten.png);
+  background-repeat: no-repeat;
+  background-size: 30vw;
+  background-position: right 90px top 74px, right 120px bottom 65px;
+  margin-bottom: calc(4.1vw + 88.3px);
+ 
+}
+.additional{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding-top: calc(2.1vw + 93.4px);
+}
+.additional{
+  display: none;
+}
+.bg_white{
+  background: #FFFFFF;
+  width: calc(65.6vw + 50px);
+  height: calc(2vw + 292.2px);
+}
+.bg_white{
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center; 
+  gap: calc(0.4vw + 13.5px);
+  padding-top: calc(4.1vw + 11.8px);
+  padding-left: calc(2vw + 10px);
+}
+.gratit span{
+  font-size: calc(0.5vw + 18.2px);
+  text-align: center;
+}
+.black{
+  background-color: #000000;
+  width: 100vw;
+  height: 100vh;
+  margin-bottom: calc(4.1vw + 88.3px);
+  display: none;
+}
 .eighth {
   font-family: "Cormorant";
-  padding-left: calc(4vw + 3.9px);
-  padding-right: calc(14.7vw + 32.4px);
+  padding-left: calc(5.6vw + 4px);
+
   padding-bottom: calc(4.2vw + 88px);
 }
 .reviews {
@@ -673,28 +768,20 @@ button {
   width: calc(52.3vw + 52.5px);
 }
 @media (max-width: 700px) {
-  .addition{
+  .addition {
     position: relative;
     display: block;
     height: 28px;
     width: 215px;
   }
-  .madeshkaf {
-    display: block;
-    margin-bottom: 102px;
-  }
-  .allPictures {
-    width: 280px;
-    height: 441px;
+  .additional{
+    background-image: none
   }
   .icons img {
     width: 80px;
     height: 80px;
   }
 
-  .furniture {
-    display: none;
-  }
   .mini {
     display: block;
     font-size: 20px;
@@ -717,9 +804,35 @@ button {
 }
 @media (max-width: 700px) {
   .choice {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  .box {
+    padding-left: 0;
+  }
+}
+@media (max-width: 400px) {
+  .choice {
     width: 250px;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
+  }
+
+  .furniture {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas:
+      "container kuhna"
+      "kupe kupe";
+  }
+  .container {
+    grid-area: container;
+  }
+  .kuhna {
+    grid-area: kuhna;
+  }
+  .kupe {
+    grid-area: kupe;
   }
   .disappear {
     display: block;
@@ -741,6 +854,9 @@ button {
   }
   .seventh {
     background-image: none;
+  }
+  .slide {
+    width: 100%;
   }
 }
 @media (max-width: 975px) {
@@ -766,11 +882,10 @@ button {
     display: block;
   }
 }
-@media (min-width: 1000px) {
-  .why {
-    text-align: center;
-  }
-  .comments p {
-    margin: 0 16;
-  }
+.splide__arrow {
+  background-color: transparent !important;
+  color: #4c3433 !important;
+}
+.splide__pagination {
+  display: none !important;
 }
