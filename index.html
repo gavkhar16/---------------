@@ -94,11 +94,20 @@
           </div>
         </div>
       </div>
+    <div class="number">
       <input class="telephone" type="tel" placeholder="Введите номер" />
-      <button>Получить скидку</button>
-      <div class="open">
-        <span>+375259199290</span>
-        <span >Пн-Вс 9:00-21:00</span>
+      <input class="error" type="tel" placeholder="Введите номер телефона" style="display: none;" />
+      <input class="correct" type="tel" placeholder="Поздравляю у вас скидка на 10%" style="display: none;" />
+      <button>
+        Получить скидку
+        <div class="loader"></div>
+      </button>
+    </div>
+      <div class="open" >
+        <div class="invisible">
+          <span>+375259199290</span>
+          <span>Пн-Вс 9:00-21:00</span>
+        </div>      
       </div>
     </section>
     <section>

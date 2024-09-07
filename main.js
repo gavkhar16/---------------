@@ -20,6 +20,43 @@ function saleDate(){
     saleDate()    
     },1000)
 
+
+    document.querySelector('button').addEventListener('click', function () {
+      const telephoneInput = document.querySelector('.telephone');
+      const errorInput = document.querySelector('.error');
+      const correctInput = document.querySelector('.correct');
+      const loader = document.querySelector('.loader');
+    
+      // Скрыть все поля перед проверкой
+      errorInput.style.display = 'none';
+      correctInput.style.display = 'none';
+    
+      // Проверка: введено ли 9 или 12 цифр
+      const inputLength = telephoneInput.value.length;
+      if (inputLength === 9 || inputLength === 12) {
+        // Показать loader
+        loader.style.display = 'block';
+    
+        // Скрыть loader через 3 секунды и показать "correct" input
+        setTimeout(() => {
+          loader.style.display = 'none';
+          correctInput.style.display = 'block';
+          telephoneInput.style.display = 'none'; // Скрыть поле ввода телефона
+        }, 3000);  // 3 секунды для loader
+    
+      } else if (inputLength === 0) {
+        // Показать loader на 3 секунды, затем показать "error" input
+        loader.style.display = 'block';
+    
+        setTimeout(() => {
+          loader.style.display = 'none';
+          errorInput.style.display = 'block';
+          telephoneInput.style.display = 'none'; // Скрыть поле ввода телефона
+        }, 3000);  // 3 секунды для loader
+      }
+    });
+    
+
 let openWindow = document.querySelector('.first_menu');
 openWindow.addEventListener('click', openFirstWindow);
 

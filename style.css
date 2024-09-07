@@ -161,6 +161,59 @@ button {
   margin-bottom: 95px;
   cursor: pointer;
 }
+.error {
+  border: 2px solid #F86464;
+  border-radius: 8px;
+  width: calc(17vw + 255px);
+  margin-bottom: calc(0.5vw + 21.2px);
+  font-size: calc(0.7vw + 16.6px);
+  line-height: 92%;
+  padding: 12px 20px;
+  cursor: pointer;
+}
+
+.error::placeholder {
+  color: rgba(243, 59, 59, 0.39);
+}
+
+.correct {
+  border: 2px solid #29aa36;
+  border-radius: 8px;
+  width: calc(17vw + 255px);
+  margin-bottom: calc(0.5vw + 21.2px);
+  font-size: calc(0.7vw + 16.6px);
+  line-height: 92%;
+  padding: 12px 20px;
+  cursor: pointer;
+}
+
+button {
+  width: calc(4.7vw + 191.6px);
+  height: 50px;
+  border: none;
+  border-radius: 8px;
+  background-color: #af9678;
+  color: white;
+  font-size: calc(0.7vw + 16.6px);
+  line-height: 107%;
+  text-align: center;
+  margin-bottom: 95px;
+  cursor: pointer;
+}
+
+
+.loader {
+  display: none;
+  width: 60px;
+  aspect-ratio: 4;
+  background: radial-gradient(circle closest-side,#000 90%,#0000) 0/calc(100%/3) 100% space;
+  clip-path: inset(0 100% 0 0);
+  animation: l1 1s steps(4) infinite;
+}
+@keyframes l1 {to{clip-path: inset(0 -34% 0 0)}}
+.open{
+  display: none;
+}
 .contener {
   display: flex;
   justify-content: center;
@@ -815,11 +868,11 @@ button {
   .open {
     display: block;
   }
-  .open {
+  .invisible {
     display: flex;
     flex-direction: column;
   }
-  .open span {
+  .invisible span {
     position: relative;
     left: 190px;
     bottom: 56px;
